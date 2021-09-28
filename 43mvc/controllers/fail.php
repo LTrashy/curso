@@ -8,4 +8,5 @@
             $this->view->render('fail/index');
             //echo "<p> Error al cargar REcurso </p>";
         }
+        
     }

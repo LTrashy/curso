@@ -37,6 +37,14 @@ body{
     margin: 0 auto;
 }
 
+#main form p input[type=submit]{
+    background-color: black;
+    color: white;
+    padding: 8px;
+    border: none;
+    width: 200px;
+}
+
 .center{
     text-align: center;
 }
