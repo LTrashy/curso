@@ -1,0 +1,102 @@
+/* 
+    selectores simples
+        selectores elementales
+            selector universal -> *
+            selector de tipo oetiqueta -> nombre de la etiqueta
+        selectores de atributo
+            id 
+            clase
+            otros atributos
+                [atributo]
+                [atributo = valor]
+                [atributo^=valor]
+                [atributo*=valor]
+                [atributo$=valor]
+                [atributo|=valor]
+
+                
+    selectores compuestos
+        selectores agrupados
+        selectores convinadores
+        pseudo clases - pseudo elementos
+ */
+/* 
+ *{
+     background-color: plum;
+ }
+ h1{
+     background-color: purple;
+ }
+ p{
+     background-color: seagreen;
+ }
+ ul{
+     background-color: slateblue;
+ }
+ li{
+     background-color: tan;
+ } */
+ /* #title{
+     background-color:darkcyan;
+ }
+ .title{
+     background-color: darkorchid;
+ }
+ .text{
+     background-color: darkseagreen;
+ } */
+/* 
+ [href]{
+     background-color: darkviolet;
+ }
+ [href="https://google.com"]{
+     background-color: dodgerblue;
+ }
+ [href^="color"]{
+     background-color:peru;
+ }
+ [href*="modo"]{
+     background-color:springgreen;
+ }
+ [href$="rojo"]{
+     background-color:teal;
+ }
+ [lang|="en"]{
+     background-color:cornflowerblue;
+ } */
+/* 
+ .text,
+ .text-1,
+ .text-2,
+ .text-3,
+ .text-4{
+     background-color: darkcyan;
+ } */
+ 
+
+/* div .title-2{
+    background-color: darkslateblue;
+}
+
+.text-2 + .title-2{
+    background-color:darkslategrey;
+}
+
+.text-2 ~ p{
+    background-color:gold;
+} */
+
+.container >p{
+    background-color:coral;
+}
+
+
+
+
+
+
+
+
+
+
+

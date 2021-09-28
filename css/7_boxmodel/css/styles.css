@@ -1,0 +1,63 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+}
+.header{
+    background-color: mediumpurple;
+    height: 50px;
+}
+.title{
+    
+    width: 300px;
+    background-color: lightpink;
+    margin-left: auto;
+    margin-right: auto;
+}
+.block{
+    background-color: purple;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border: 5px solid rebeccapurple;
+}
+.inline{
+    background-color: coral;
+    color: inherit;
+    /* no funciona width ni height */
+    margin-right: 100px;
+    /* padding: 100px; */
+}
+.buttons{
+    background-color: slateblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+
+}
+.button{
+    margin-left: 570px;
+    padding: 25px 50px;
+    /* style: 
+            none        no hay
+            hidden      oculto
+            dotted      punteado
+            dashed      guiones
+            solid       solido
+            double      doble linea
+            groove      3d
+            ridge       3d al revez
+            inset       3d dentro
+            outset      3d afuera 
+             */
+    border: 10px outset darkorchid;
+    /* border-top-color: indigo;
+    border-bottom-color: indigo; */
+    
+}
