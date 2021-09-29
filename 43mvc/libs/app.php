@@ -25,11 +25,24 @@ require_once 'controllers/fail.php';
                 $controller = new $url[0];
                 $controller->loadModel($url[0]);
 
-                if(isset($url[1])){
-                    $controller->{$url[1]}();
+                $nparam = count($url);
+
+                if($nparam > 1){
+                    if($nparam > 2){
+                        $param = [];
+                        for($i=2;$i<$nparam;$i++){
+                            array_push($param,$url[$i]);
+                        }
+                        $controller->{$url[1]}($param);
+                    }else{
+                        $controller->{$url[1]}();
+
+                    }
                 }else{
                     $controller->render();
                 }
+
+
 
             }else{
                 $controller = new Fail();

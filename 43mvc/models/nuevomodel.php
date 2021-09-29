@@ -6,8 +6,8 @@
 
         public function insert($data){
             
-            try{
             $query = $this->db->connect()->prepare('INSERT INTO alumnos (matricula,nombre,apellido)               VALUES(:matricula, :nombre, :apellido) ');
+            try{
 
             $query->execute(['matricula' => $data['matricula'],
                                 'nombre' => $data['nombre'],
