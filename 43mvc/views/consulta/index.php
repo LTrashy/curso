@@ -10,6 +10,7 @@
     <?php require 'views/header.php'; ?>
     <div id="main">
         <h1 class="center">Seccion de Consulta</h1>
+        <div id="respuesta" class="center"></div>
 
         <table width="100%">
             <thead>
@@ -19,7 +20,7 @@
                     <th>Apellido</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="tbody-alumnos">
                 <?php 
                     include_once 'models/alumno.php';
                     foreach($this->alumnos as $row){
@@ -27,12 +28,13 @@
                         $alumno = $row;
                     
                 ?>
-                <tr>
+                <tr id="fila-<?php echo $alumno->matricula; ?>">
                     <td><?php echo $alumno->matricula; ?></td></td>
                     <td><?php echo $alumno->nombre; ?></td>
                     <td><?php echo $alumno->apellido; ?></td>
                     <td><a href="<?php echo constant('URL')."consulta/verAlumno/". $alumno->matricula; ?>">Edit</a></td>
-                    <td><a href="<?php echo constant('URL')."consulta/eliminarAlumno/". $alumno->matricula;?>">Delete</a></td>
+                    <td><button class="bEliminar" data-matricula="<?php echo $alumno->matricula; ?>">Delete</button></td>
+                    <!--<td><a href="<?php echo constant('URL')."consulta/eliminarAlumno/". $alumno->matricula;?>">Delete</a></td>-->
                 </tr>
 
                 <?php } ?>
@@ -41,5 +43,7 @@
         <!-- <?php echo var_dump($this->alumnos);?> -->
     </div>
     <?php require 'views/footer.php'; ?>
+
+    <script src="<?php echo constant('URL'); ?>public/js/main.js"></script>
 </body>
 </html>

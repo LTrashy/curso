@@ -54,13 +54,17 @@
 
         function eliminarAlumno($param = null){
             $matricula = $param[0];
+            
             if($this->model->delete($matricula)){
-                $this->view->mensaje ="Alumno Eliminado con exito";
+                //$this->view->mensaje ="Alumno Eliminado con exito";
+                $mensaje = "Alumno Eliminado con exito";
             }else{
-                $this->view->mensaje ="Alumno no se pudo eliminar";
-                
+                //$this->view->mensaje ="Alumno no se pudo eliminar";
+                $mensaje = "Alumno no se pudo eliminar";
             }
-            $this->render();
+            //$this->render();
+            echo $mensaje;
+            
         }
 
         
