@@ -1,0 +1,42 @@
+[29-Oct-2021 12:24:19 America/New_York] hi!, errors!
+[29-Oct-2021 12:24:38 America/New_York] hi!, errors!
+[29-Oct-2021 12:39:58 America/New_York] hi!, errors!
+[29-Oct-2021 12:39:58 America/New_York] APP::construct-> no hay controlador especificado
+[29-Oct-2021 12:39:58 America/New_York] PHP Warning:  require_once(controllers/login.php): failed to open stream: No such file or directory in /var/www/curso/66/libs/app.php on line 11
+[29-Oct-2021 12:39:58 America/New_York] PHP Fatal error:  require_once(): Failed opening required 'controllers/login.php' (include_path='.:/usr/share/php') in /var/www/curso/66/libs/app.php on line 11
+[29-Oct-2021 12:41:38 America/New_York] hi!, errors!
+[29-Oct-2021 12:41:38 America/New_York] APP::construct-> no hay controlador especificado
+[29-Oct-2021 12:41:38 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined method Login::loadModel() in /var/www/curso/66/libs/app.php:13
+Stack trace:
+#0 /var/www/curso/66/index.php(16): App->__construct()
+#1 {main}
+  thrown in /var/www/curso/66/libs/app.php on line 13
+[29-Oct-2021 12:41:59 America/New_York] hi!, errors!
+[29-Oct-2021 12:41:59 America/New_York] APP::construct-> no hay controlador especificado
+[29-Oct-2021 12:41:59 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined method Login::loadModel() in /var/www/curso/66/libs/app.php:13
+Stack trace:
+#0 /var/www/curso/66/index.php(16): App->__construct()
+#1 {main}
+  thrown in /var/www/curso/66/libs/app.php on line 13
+[29-Oct-2021 12:44:55 America/New_York] hi!, errors!
+[29-Oct-2021 12:44:55 America/New_York] APP::construct-> no hay controlador especificado
+[29-Oct-2021 12:44:55 America/New_York] PHP Fatal error:  Uncaught Error: Class 'Controller' not found in /var/www/curso/66/controllers/login.php:2
+Stack trace:
+#0 /var/www/curso/66/libs/app.php(11): require_once()
+#1 /var/www/curso/66/index.php(16): App->__construct()
+#2 {main}
+  thrown in /var/www/curso/66/controllers/login.php on line 2
+[29-Oct-2021 12:46:08 America/New_York] hi!, errors!
+[29-Oct-2021 12:46:08 America/New_York] APP::construct-> no hay controlador especificado
+[29-Oct-2021 12:47:25 America/New_York] hi!, errors!
+[29-Oct-2021 12:47:25 America/New_York] APP::construct-> no hay controlador especificado
+[29-Oct-2021 12:47:25 America/New_York] Login::construct -> inicio Login
+[29-Oct-2021 12:49:21 America/New_York] hi!, /|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|/|
+[29-Oct-2021 12:49:21 America/New_York] APP::construct-> no hay controlador especificado
+[29-Oct-2021 12:49:21 America/New_York] Login::construct -> inicio Login
+[29-Oct-2021 12:50:08 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-
+[29-Oct-2021 12:50:08 America/New_York] APP::construct-> no hay controlador especificado
+[29-Oct-2021 12:50:08 America/New_York] Login::construct -> inicio Login
+[29-Oct-2021 12:50:30 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[29-Oct-2021 12:50:30 America/New_York] APP::construct-> no hay controlador especificado
+[29-Oct-2021 12:50:30 America/New_York] Login::construct -> inicio Login
