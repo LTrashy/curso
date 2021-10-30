@@ -38,6 +38,9 @@
                             //no teine parametros, se manda a llamar el parametro tal cual
                             $controller->{$url[1]}();
                         }
+                    }else{
+                        //error , no existe el metodo
+                        $controller = new Errores();
                     }
                 }else{
                     //cargar metodo por default
@@ -45,6 +48,7 @@
                 }
             }else{
                 //no existe archivo send error
+                $controller = new Errores();
             }
         }
 

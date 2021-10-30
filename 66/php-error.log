@@ -40,3 +40,36 @@ Stack trace:
 [29-Oct-2021 12:50:30 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
 [29-Oct-2021 12:50:30 America/New_York] APP::construct-> no hay controlador especificado
 [29-Oct-2021 12:50:30 America/New_York] Login::construct -> inicio Login
+[29-Oct-2021 22:39:13 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[29-Oct-2021 22:39:13 America/New_York] APP::construct-> no hay controlador especificado
+[29-Oct-2021 22:39:13 America/New_York] Login::construct -> inicio Login
+[29-Oct-2021 22:39:13 America/New_York] PHP Notice:  Undefined variable: uri in /var/www/curso/66/libs/controller.php on line 11
+[29-Oct-2021 22:39:13 America/New_York] PHP Warning:  require_once(/var/www/curso/66): failed to open stream: Success in /var/www/curso/66/libs/controller.php on line 11
+[29-Oct-2021 22:39:13 America/New_York] PHP Fatal error:  require_once(): Failed opening required '' (include_path='.:/usr/share/php') in /var/www/curso/66/libs/controller.php on line 11
+[29-Oct-2021 22:41:40 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[29-Oct-2021 22:41:40 America/New_York] APP::construct-> no hay controlador especificado
+[29-Oct-2021 22:41:40 America/New_York] Login::construct -> inicio Login
+[29-Oct-2021 22:41:40 America/New_York] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function View::render(), 0 passed in /var/www/curso/66/libs/app.php on line 14 and at least 1 expected in /var/www/curso/66/libs/view.php:7
+Stack trace:
+#0 /var/www/curso/66/libs/app.php(14): View->render()
+#1 /var/www/curso/66/index.php(23): App->__construct()
+#2 {main}
+  thrown in /var/www/curso/66/libs/view.php on line 7
+[29-Oct-2021 22:42:05 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[29-Oct-2021 22:42:05 America/New_York] APP::construct-> no hay controlador especificado
+[29-Oct-2021 22:42:05 America/New_York] Login::construct -> inicio Login
+[29-Oct-2021 22:42:05 America/New_York] PHP Fatal error:  Uncaught Error: Call to undefined method Login::render() in /var/www/curso/66/libs/app.php:14
+Stack trace:
+#0 /var/www/curso/66/index.php(23): App->__construct()
+#1 {main}
+  thrown in /var/www/curso/66/libs/app.php on line 14
+[29-Oct-2021 22:44:12 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[29-Oct-2021 22:44:12 America/New_York] APP::construct-> no hay controlador especificado
+[29-Oct-2021 22:44:12 America/New_York] Login::construct -> inicio Login
+[29-Oct-2021 22:45:46 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[29-Oct-2021 22:45:46 America/New_York] APP::construct-> no hay controlador especificado
+[29-Oct-2021 22:45:46 America/New_York] Login::construct -> inicio Login
+[29-Oct-2021 22:47:38 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[29-Oct-2021 22:47:38 America/New_York] APP::construct-> no hay controlador especificado
+[29-Oct-2021 22:47:38 America/New_York] Login::construct -> inicio Login
+[29-Oct-2021 22:47:38 America/New_York] Login::render -> carga render de login
