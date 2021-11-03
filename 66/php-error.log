@@ -73,3 +73,90 @@ Stack trace:
 [29-Oct-2021 22:47:38 America/New_York] APP::construct-> no hay controlador especificado
 [29-Oct-2021 22:47:38 America/New_York] Login::construct -> inicio Login
 [29-Oct-2021 22:47:38 America/New_York] Login::render -> carga render de login
+[02-Nov-2021 11:51:26 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[02-Nov-2021 11:51:26 America/New_York] APP::construct-> no hay controlador especificado
+[02-Nov-2021 11:51:26 America/New_York] Login::construct -> inicio Login
+[02-Nov-2021 11:51:26 America/New_York] Login::render -> carga render de login
+[02-Nov-2021 11:52:01 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[02-Nov-2021 11:52:01 America/New_York] APP::construct-> no hay controlador especificado
+[02-Nov-2021 11:52:01 America/New_York] Login::construct -> inicio Login
+[02-Nov-2021 11:52:01 America/New_York] Login::render -> carga render de login
+[02-Nov-2021 11:52:02 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[02-Nov-2021 11:52:02 America/New_York] APP::construct-> no hay controlador especificado
+[02-Nov-2021 11:52:02 America/New_York] Login::construct -> inicio Login
+[02-Nov-2021 11:52:02 America/New_York] Login::render -> carga render de login
+[02-Nov-2021 13:16:01 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[02-Nov-2021 13:16:01 America/New_York] APP::construct-> no hay controlador especificado
+[02-Nov-2021 13:16:01 America/New_York] Login::construct -> inicio Login
+[02-Nov-2021 13:16:01 America/New_York] PHP Warning:  constant(): Couldn't find constant CHARSET in /var/www/curso/66/libs/database.php on line 16
+[02-Nov-2021 13:16:01 America/New_York] Login::render -> carga render de login
+[02-Nov-2021 13:16:31 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[02-Nov-2021 13:16:31 America/New_York] APP::construct-> no hay controlador especificado
+[02-Nov-2021 13:16:31 America/New_York] Login::construct -> inicio Login
+[02-Nov-2021 13:16:31 America/New_York] PHP Warning:  constant(): Couldn't find constant CHARSET in /var/www/curso/66/libs/database.php on line 16
+[02-Nov-2021 13:16:31 America/New_York] Login::render -> carga render de login
+[02-Nov-2021 13:20:18 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[02-Nov-2021 13:20:18 America/New_York] APP::construct-> no hay controlador especificado
+[02-Nov-2021 13:20:18 America/New_York] Login::construct -> inicio Login
+[02-Nov-2021 13:20:18 America/New_York] PHP Warning:  constant(): Couldn't find constant CHARSET in /var/www/curso/66/libs/database.php on line 16
+[02-Nov-2021 13:20:18 America/New_York] Login::render -> carga render de login
+[02-Nov-2021 13:20:57 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[02-Nov-2021 13:20:57 America/New_York] APP::construct-> no hay controlador especificado
+[02-Nov-2021 13:20:57 America/New_York] Login::construct -> inicio Login
+[02-Nov-2021 13:20:57 America/New_York] PHP Warning:  constant(): Couldn't find constant CHARSET in /var/www/curso/66/libs/database.php on line 16
+[02-Nov-2021 13:20:57 America/New_York] Login::render -> carga render de login
+[02-Nov-2021 13:20:58 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[02-Nov-2021 13:20:58 America/New_York] APP::construct-> no hay controlador especificado
+[02-Nov-2021 13:20:58 America/New_York] Login::construct -> inicio Login
+[02-Nov-2021 13:20:58 America/New_York] PHP Warning:  constant(): Couldn't find constant CHARSET in /var/www/curso/66/libs/database.php on line 16
+[02-Nov-2021 13:20:58 America/New_York] Login::render -> carga render de login
+[02-Nov-2021 13:20:59 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[02-Nov-2021 13:20:59 America/New_York] APP::construct-> no hay controlador especificado
+[02-Nov-2021 13:20:59 America/New_York] Login::construct -> inicio Login
+[02-Nov-2021 13:20:59 America/New_York] PHP Warning:  constant(): Couldn't find constant CHARSET in /var/www/curso/66/libs/database.php on line 16
+[02-Nov-2021 13:20:59 America/New_York] Login::render -> carga render de login
+[02-Nov-2021 13:21:57 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[02-Nov-2021 13:21:57 America/New_York] APP::construct-> no hay controlador especificado
+[02-Nov-2021 13:21:57 America/New_York] Login::construct -> inicio Login
+[02-Nov-2021 13:21:57 America/New_York] PHP Warning:  constant(): Couldn't find constant CHARSET in /var/www/curso/66/libs/database.php on line 16
+[02-Nov-2021 13:21:57 America/New_York] Login::render -> carga render de login
+[02-Nov-2021 13:21:57 America/New_York] PHP Notice:  Undefined index: errors in /var/www/curso/66/libs/view.php on line 26
+[02-Nov-2021 13:22:04 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[02-Nov-2021 13:22:04 America/New_York] APP::construct-> no hay controlador especificado
+[02-Nov-2021 13:22:04 America/New_York] Login::construct -> inicio Login
+[02-Nov-2021 13:22:04 America/New_York] PHP Warning:  constant(): Couldn't find constant CHARSET in /var/www/curso/66/libs/database.php on line 16
+[02-Nov-2021 13:22:04 America/New_York] Login::render -> carga render de login
+[02-Nov-2021 13:23:06 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[02-Nov-2021 13:23:06 America/New_York] APP::construct-> no hay controlador especificado
+[02-Nov-2021 13:23:06 America/New_York] Login::construct -> inicio Login
+[02-Nov-2021 13:23:06 America/New_York] PHP Warning:  constant(): Couldn't find constant CHARSET in /var/www/curso/66/libs/database.php on line 16
+[02-Nov-2021 13:23:06 America/New_York] Login::render -> carga render de login
+[02-Nov-2021 13:23:06 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[02-Nov-2021 13:23:06 America/New_York] APP::construct-> no hay controlador especificado
+[02-Nov-2021 13:23:06 America/New_York] Login::construct -> inicio Login
+[02-Nov-2021 13:23:06 America/New_York] PHP Warning:  constant(): Couldn't find constant CHARSET in /var/www/curso/66/libs/database.php on line 16
+[02-Nov-2021 13:23:06 America/New_York] Login::render -> carga render de login
+[02-Nov-2021 13:23:38 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[02-Nov-2021 13:23:38 America/New_York] APP::construct-> no hay controlador especificado
+[02-Nov-2021 13:23:38 America/New_York] Login::construct -> inicio Login
+[02-Nov-2021 13:23:38 America/New_York] Login::render -> carga render de login
+[02-Nov-2021 13:25:29 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[02-Nov-2021 13:25:29 America/New_York] APP::construct-> no hay controlador especificado
+[02-Nov-2021 13:25:29 America/New_York] Login::construct -> inicio Login
+[02-Nov-2021 13:25:29 America/New_York] Login::render -> carga render de login
+[02-Nov-2021 13:25:31 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[02-Nov-2021 13:25:31 America/New_York] APP::construct-> no hay controlador especificado
+[02-Nov-2021 13:25:31 America/New_York] Login::construct -> inicio Login
+[02-Nov-2021 13:25:31 America/New_York] Login::render -> carga render de login
+[02-Nov-2021 13:26:48 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[02-Nov-2021 13:26:48 America/New_York] APP::construct-> no hay controlador especificado
+[02-Nov-2021 13:26:48 America/New_York] Login::construct -> inicio Login
+[02-Nov-2021 13:26:48 America/New_York] Login::render -> carga render de login
+[02-Nov-2021 13:27:07 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[02-Nov-2021 13:27:07 America/New_York] APP::construct-> no hay controlador especificado
+[02-Nov-2021 13:27:07 America/New_York] Login::construct -> inicio Login
+[02-Nov-2021 13:27:07 America/New_York] Login::render -> carga render de login
+[02-Nov-2021 13:27:13 America/New_York] hi!, /-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|-/-|
+[02-Nov-2021 13:27:13 America/New_York] APP::construct-> no hay controlador especificado
+[02-Nov-2021 13:27:13 America/New_York] Login::construct -> inicio Login
+[02-Nov-2021 13:27:13 America/New_York] Login::render -> carga render de login

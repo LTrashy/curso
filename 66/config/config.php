@@ -4,4 +4,4 @@
        define ('DB','expenseapp');
        define ('USER','root');
        define ('PASSWORD','donaire123#@!');
-       define ('charset','utf8mb4');
+       define ('CHARSET','utf8mb4');

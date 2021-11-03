@@ -1,4 +1,5 @@
 <?php
+    require_once 'controllers/errores.php';
     class App{
         function __construct(){
             $url = isset($_GET['url']) ? $_GET['url'] : null;
@@ -41,6 +42,7 @@
                     }else{
                         //error , no existe el metodo
                         $controller = new Errores();
+                        $controller->render();
                     }
                 }else{
                     //cargar metodo por default
@@ -49,6 +51,7 @@
             }else{
                 //no existe archivo send error
                 $controller = new Errores();
+                $controller->render();
             }
         }
 
