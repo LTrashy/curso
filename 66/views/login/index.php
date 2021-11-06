@@ -25,7 +25,7 @@
                 <label for="password">password</label>
                 <input type="password" name="password" id="password" autocomplete="off">
             </p>
-            <p>
+            <p class="center"> 
                 <input type="submit" value="Iniciar sesión" />
             </p>
 

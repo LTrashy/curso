@@ -1,5 +1,5 @@
 <?php
-    class userModel extends Model implements IModel{
+    class UserModel extends Model implements IModel{
         
         private $id;
         private $username;
@@ -8,6 +8,7 @@
         private $budget;
         private $photo;
         private $name;
+        
         public function __construct(){
             parent::__construct();
             $this->username = '';

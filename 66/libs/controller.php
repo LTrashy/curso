@@ -53,5 +53,6 @@
             }
 
             header('Location: ' . constant('URL') . $route . $params);
+            die();
         }
     }
