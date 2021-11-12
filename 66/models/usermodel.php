@@ -98,7 +98,7 @@
             try{
                 $query = $this->prepare('UPDATE users SET 
                                             username = :username,
-                                            password = :password,
+                                            -- password = :password,
                                             role = :role,
                                             budget = :budget,
                                             photo = :photo,
@@ -107,13 +107,14 @@
                 $query->execute([
                     'id' => $this->id,
                     'username' => $this->username,
-                    'password' => $this->password,
+                    // 'password' => $this->password,
                     'role' => $this->role,
                     'budget' => $this->budget,
                     'photo' => $this->photo,
                     'name' => $this->name,
                 ]);
-                
+                // var_dump($this->password);
+                // die();
                 return true;
             }catch(PDOException $e){
                 error_log('UserModel::get->PDOException ' .$e);
@@ -216,7 +217,9 @@
          * @return  self
          */ 
         public function setPassword($password)
-        {
+        {   
+                // var_dump($password);
+                
                 $this->password = $this->getHashedPassword($password);
 
                 return $this;

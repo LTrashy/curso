@@ -1,4 +1,4 @@
-
+<?php $user = $this->d['user'];?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,10 +15,12 @@
             <div id="user-header">
                 <div id="user-info-container">
                     <div id="user-photo">
-                    
+                        <?php if($user->getPhoto() != ''){?>
+                        <img src="<?php echo constant('URL') ?>public/img/photos/<?= $user->getPhoto()?>" width="200" />
+                        <?php } ?>
                     </div>
                     <div id="user-info">
-                        <h2></h2>
+                        <h2>Hola, <?= ($user->getName() != '') ? $user->getName() : $user->getUsername()?></h2>
                     </div>
                 </div>
             </div>
@@ -36,7 +38,7 @@
                     <form action=<?php echo constant('URL'). 'user/updateName' ?> method="POST">
                         <div class="section">
                             <label for="name">Nombre</label>
-                            <input type="text" name="name" id="name" autocomplete="off" required value="">
+                            <input type="text" name="name" id="name" autocomplete="off" required value="<?= $user->getName()?>">
                             <div><input type="submit" value="Cambiar nombre" /></div>
                         </div>
                     </form>
@@ -45,7 +47,7 @@
                         <div class="section">
                             <label for="photo">Foto de perfil</label>
 
-                                <img src="<?php echo constant('URL') ?>public/img/photos/" width="50" height="50" />
+                                <img src="<?php echo constant('URL') ?>public/img/photos/<?php echo $user->getPhoto();?>" width="50" height="50" />
                             
                             <input type="file" name="photo" id="photo" autocomplete="off" required>
                             <div><input type="submit" value="Cambiar foto de perfil" /></div>
@@ -70,7 +72,7 @@
                     <form action="user/updateBudget" method="POST">
                         <div class="section">
                             <label for="budget">Definir presupuesto</label>
-                            <div><input type="number" name="budget" id="budget" autocomplete="off" required value="<?php echo $user->getBudget() ?>"></div>
+                            <div><input type="number" name="budget" id="budget" autocomplete="off" required value="<?php echo $user->getBudget(); ?>"></div>
                             <div><input type="submit" value="Actualizar presupuesto" /></div>
                         </div>
                     </form>
