@@ -1,3 +1,5 @@
+<?php $stats = $this->d['stats']; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,47 +13,48 @@
     <?php require 'header.php'; ?>
 
     <div id="main-container">
+        <?php $this->showMessages(); ?>
         <div id="dashboard-container" class="container">
             <div id="left-container">
                 <div id="panels-container">
                     <div class="panel">
                         <div class="title">USUARIOS</div>
-                        <div class="datum"></div>
+                        <div class="datum"><?= $stats['count-users']?></div>
                         <div class="description">Usuarios registrados</div>
                     </div>
                     <div class="panel">
                         <div class="title">Gastos</div>
-                        <div class="datum"></div>
+                        <div class="datum"><?= $stats['count-expenses']?></div>
                         <div class="description">Transacciones</div>
                     </div>
                     <div class="panel">
                         <div class="title">Gastos</div>
-                        <div class="datum">$</div>
+                        <div class="datum">$<?= number_format($stats['max-expenses'], 2)?></div>
                         <div class="description">Gasto máximo</div>
                     </div>
                     <div class="panel">
                         <div class="title">Gastos</div>
-                        <div class="datum">$</div>
+                        <div class="datum">$<?= number_format($stats['avg-expenses'], 2)?></div>
                         <div class="description">Gasto promedio</div>
                     </div>
                     <div class="panel">
                         <div class="title">Gastos</div>
-                        <div class="datum">$</div>
+                        <div class="datum">$<?= number_format($stats['min-expenses'], 2)?></div>
                         <div class="description">Gasto mínimo</div>
                     </div>
                     <div class="panel">
                         <div class="title">Categorías</div>
-                        <div class="datum"></div>
+                        <div class="datum"><?= $stats['count-categories']?></div>
                         <div class="description">Categorias creadas</div>
                     </div>
                     <div class="panel">
                         <div class="title">Categorías</div>
-                        <div class="datum"></div>
+                        <div class="datum"><?= $stats['mostused-categories']?></div>
                         <div class="description">Categorias más usada</div>
                     </div>
                     <div class="panel">
                         <div class="title">Categorías</div>
-                        <div class="datum"></div>
+                        <div class="datum"><?= $stats['lessused-categories']?></div>
                         <div class="description">Categorias menos usada</div>
                     </div>
                 </div>

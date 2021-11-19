@@ -20,7 +20,7 @@ class ExpensesModel extends Model implements IModel{
 
             $query->execute([
                 'title' => $this->title,
-                'amount' => $this->amoint,
+                'amount' => $this->amount,
                 'category_id' => $this->categoryid,
                 'date' => $this->date,
                 'id_user' => $this->userid
@@ -43,7 +43,6 @@ class ExpensesModel extends Model implements IModel{
             while($p = $query->fetch(PDO::FETCH_ASSOC)){
                 $item = new ExpensesModel();
                 $item->from($p);
-
                 array_push($items, $item);
             }
 
@@ -76,6 +75,7 @@ class ExpensesModel extends Model implements IModel{
     public function delete($id)
     {
         try{
+            
             $query = $this->prepare('DELETE FROM expenses WHERE id = :id');
 
             $query->execute([
@@ -251,7 +251,7 @@ class ExpensesModel extends Model implements IModel{
             $year = substr($date, 0, 4);
             $month = substr($date, 5, 7);
 
-            $query = $this->prepare('SELECT SUM(amaunt) AS total FROM expenses WHERE category_id = :categoryId AND id_user = :user AND YEAR(date) = :year AND MONTH(date) = :month');
+            $query = $this->prepare('SELECT SUM(amount) AS total FROM expenses WHERE category_id = :categoryId AND id_user = :user AND YEAR(date) = :year AND MONTH(date) = :month');
 
             $query->execute([
                 'categoryId' => $categoryId,

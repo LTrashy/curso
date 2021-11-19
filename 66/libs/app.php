@@ -33,8 +33,9 @@
                             $params = [];
 
                             for($i=0;$i<$nparam;$i++){
-                                array_push($params, $url[$i]+2);
+                                array_push($params, $url[$i +2 ]);
                             }
+                            $controller->{$url[1]}($params);
                         }else{
                             //no teine parametros, se manda a llamar el parametro tal cual
                             $controller->{$url[1]}();

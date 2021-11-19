@@ -1,3 +1,5 @@
+
+
 <link rel="stylesheet" href="public/css/expense.css">
 <form id="form-expense-container" action="expenses/newExpense" method="POST">
     <h3>Registrar nuevo gasto</h3>
@@ -18,7 +20,7 @@
     <div class="section">
         <label for="categoria">Categoria</label>
             <select name="category" id="" required>
-
+                
             </select>
     </div>    
 

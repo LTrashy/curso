@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Expense App - Dashboard</title>
+    <title>Expense App - User</title>
     <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/user.css">
 </head>
 <body>
     <?php require_once 'views/dashboard/header.php'; ?>
 
     <div id="main-container">
-
+        <?php $this->showMessages(); ?> 
         <div id="user-container" class="container">
             <div id="user-header">
                 <div id="user-info-container">

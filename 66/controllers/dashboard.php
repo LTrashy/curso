@@ -26,7 +26,7 @@ class DashBoard extends SessionController{
             'user' => $this->user,
             'expenses' => $expenses,
             'totalAmountThisMonth' => $totalThisMonth,
-            'maxExpensesThisMOnth' => $maxExpensesThisMonth,
+            'maxExpensesThisMonth' => $maxExpensesThisMonth,
             'categories' => $categories,
         ]);
     }

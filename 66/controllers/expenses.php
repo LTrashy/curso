@@ -16,18 +16,22 @@ class Expenses extends SessionController
 
     function render()
     {
-        $this->view->render('expenses/index', ['user' => $this->user]);
+        $this->view->render('expenses/index', [
+            'user' => $this->user,
+            'dates' => $this->getDateList(),
+            'categories' => $this->getCategoryList(),
+        ]);
     }
 
     function newExpense()
     {
         if(!$this->existPOST(['title', 'amount', 'category', 'date'])){
-            $this->redirect('dashboard', []);//error
+            $this->redirect('dashboard', ['errors' => Errors::ERROR_EXPENSES_NEWEXPENSE_EMPTY]);//error
             return;
         }
 
         if($this->user == null){
-            $this->redirect('dashboard', []);
+            $this->redirect('dashboard', ['errors' => Errors::ERROR_EXPENSES_NEWEXPENSE]);//error
             return;
         }
 
@@ -39,7 +43,7 @@ class Expenses extends SessionController
         $expense->setUserid($this->user->getId());
 
         $expense->save();
-        $this->redirect('dashboard', []);//success
+        $this->redirect('dashboard', ['success' => Success::SUCCESS_EXPENSES_NEWEXPENSE]);//success
     }
 
     function create()
@@ -59,7 +63,7 @@ class Expenses extends SessionController
         $res = [];
 
         foreach($categories as $cat){
-            array_push($res, $cat->getCategoriesId());
+            array_push($res, $cat->getCategoryId());
         }
         $res = array_values(array_unique($res));
 
@@ -78,11 +82,15 @@ class Expenses extends SessionController
         }
         $months = array_values(array_unique($months));
 
-        if(count($months) > 3){
-            array_push($res, array_pop($months));
-            array_push($res, array_pop($months));
-            array_push($res, array_pop($months));
+        foreach($months as  $month){
+            array_push($res, $month);
         }
+
+        // if(count($months) > 3){
+        //     array_push($res, array_pop($months));
+        //     array_push($res, array_pop($months));
+        //     array_push($res, array_pop($months));
+        // }
 
         return $res;
     }
@@ -177,17 +185,25 @@ class Expenses extends SessionController
 
     function delete($params)
     {
-        if($params = null){
-            $this->redirect('expenses', []); //error
+        // var_dump($params[0]);
+        // die();
+        if($params === null){
+            error_log('Expenses::delete -> null ');
+            $this->redirect('expenses', ['errors' => Errors::ERROR_EXPENSES_DELETE]); //error
+            return;
         }
         
         $id = $params[0];
         $res = $this->model->delete($id);
 
         if($res){
-            $this->redirect('expenses', []); //success
+            error_log('Expenses::delete -> eliminado ' . $id);
+            $this->redirect('expenses', ['success' => Success::SUCCESS_EXPENSES_DELETE]); //success
+            return;
         }else{
-            $this->redirect('expenses', []); //error
+            error_log('Expenses::delete -> error ');
+            $this->redirect('expenses', ['errors' => Errors::ERROR_EXPENSES_DELETE]); //error
+            return;
         }
     }
 

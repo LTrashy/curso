@@ -9,7 +9,7 @@
 <body>
 
 <?php require 'views/header.php'; ?>
-    <div class="error-container">
+    <div class="error-container center">
         <div class="error-info">
         <h1 class="error404">404</h1> 
         <p>

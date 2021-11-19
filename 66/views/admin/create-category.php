@@ -1,5 +1,5 @@
 
-<link rel="stylesheet" href="<?php echo constant('URL'); ?>public/css/expense.css">
+<link rel="stylesheet" href="<?= constant('URL') ?>public/css/expense.css">
 
 
 <form id="form-expense-container" action="admin/newCategory" method="POST">

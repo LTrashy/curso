@@ -1,8 +1,9 @@
+<link rel="stylesheet" href="<?= constant('URL'); ?>public/css/default.css">
+<link rel="stylesheet" href="<?= constant('URL'); ?>public/css/dashboard.css">
+
 <div id="header">
         <ul>
-            <li><a href="main">Home</a></li>
-            <li><a href="nuevo">Budget</a></li>
-            <li><a href="consulta">History</a></li>
-            <li><a href="ayuda">Logout</a></li>
+            <li><a href="<?= constant('URL'); ?>">Home</a></li>
+            <li><a href="<?= constant('URL'); ?>logout">Logout</a></li>
         </ul>
     </div>

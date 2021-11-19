@@ -1,6 +1,6 @@
 <?php
 
-class CategorysModel extends Model implements IMOdel
+class CategorysModel extends Model implements IModel
 {
     
     private $id ;
@@ -41,11 +41,11 @@ class CategorysModel extends Model implements IMOdel
                 $item->from($p);
                 array_push($items, $item);
             }
-
+            
             return $items;
 
         } catch (PDOException $e) {
-            return [];
+            return null;
         }
     }
         
@@ -107,15 +107,16 @@ class CategorysModel extends Model implements IMOdel
         try {
             $query = $this->prepare('SELECT name FROM categories WHERE name = :name');
             $query->execute([
-                'name' => $this->name,
+                'name' => $name,
             ]);
-
+            
             if($query->rowCount()){
                 return true;
+            }else{
+                return false;
             }
-            return false;
         } catch (PDOException $e) {
-            return false;
+            return $e;
         }
     }
 
